@@ -1,5 +1,4 @@
-﻿  main.cpp
-  player.cpp
+﻿  texture.cpp
   window.cpp
   Generazione del codice in corso...
-  bomberman.vcxproj -> D:\AIV\Terzo anno\C++\bomberman\x64\Debug\bomberman.exe
+  bomberman.vcxproj -> C:\Users\Jumbax\Documents\GitHub\bomberman\x64\Debug\bomberman.exe

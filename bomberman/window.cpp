@@ -32,8 +32,11 @@ void Window::Window::Update()
 
     for (Texture::Texture* texture : textures)
     {
-        SDL_Rect target_rect = { static_cast<int>(texture->position.x), static_cast<int>(texture->position.y), texture->width, texture->height };
-        SDL_RenderCopy(sdl_renderer, texture->sdl_texture, NULL, &target_rect);
+        if (texture)
+        {
+            SDL_Rect target_rect = { static_cast<int>(texture->position.x), static_cast<int>(texture->position.y), texture->width, texture->height };
+            SDL_RenderCopy(sdl_renderer, texture->sdl_texture, NULL, &target_rect);
+        }
     }
 
     SDL_RenderPresent(sdl_renderer);

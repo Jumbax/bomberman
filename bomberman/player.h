@@ -17,7 +17,7 @@ namespace Player
 		Player();
 		Player(const Player& other) = default;
 		Player& operator=(const Player& other) = default;
-		~Player() = default;
+		~Player();
 		void Update();
 	};
 }

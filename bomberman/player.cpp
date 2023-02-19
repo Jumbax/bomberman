@@ -13,3 +13,8 @@ void Player::Player::Update()
 {
 	texture->position = position;
 }
+
+Player::Player::~Player()
+{
+	delete texture;
+}
